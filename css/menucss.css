@@ -1,0 +1,40 @@
+<style type="text/css"> 
+
+#menu_flash{
+	width:800px;
+	height:300px;
+}
+
+ul{
+	list-style-type:none;
+        width:800px;
+	height: 38px;
+	margin-top: 5px;
+	position: relative;
+	line-height:37px;
+	background:#f0f0f0 url("images/menu-back.png") repeat-x bottom left;/* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#f0f0f0)); /* for webkit browsers */background: -moz-linear-gradient(top,  #FFFFFF,  #f0f0f0); /* for firefox 3.6+ */ 
+}
+li a{
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+       	font-family: Arial;
+	padding: 10px;
+	padding-bottom: 11px;
+	text-decoration: none;
+}
+li a:hover {
+	background: #1E90FF;
+}
+
+li{
+display:inline;
+}
+
+ul li.current a{
+	 color: #98AFC7;
+    font-weight: bold;
+}
+
+</style> 
