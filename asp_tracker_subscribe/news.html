@@ -3,6 +3,7 @@
     document.write('<script type="text/javascript" src="asp_tracker/asp_tracker_onUnload.aspx"><\/script>');
 }
 </script>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>     
@@ -21,12 +22,19 @@
 		<li ><a href= "contact_us.html">Contact Us</a></li>
 		<li  class="current" ><a href= "news.html">News</a></li></li>
 		<li><a href= "products.html">Products</a></li>
+	    <li><a href= "subscribe.html"><u><i>Subscribe</i></u></a></li>
         <li><a href= "view_SQL.html"><u><i>View Data in SQL DB</i></u></a></li>
-	</ul>
+    </ul>
 	</div>
 	<div id="content">
-        <p><b>Page Name: news.html</b></p>
-		<p>If SQL settings are configured correctly then a tracking entry will now be stored in the database<br /> along with information such as your IP address, this pages name etc.<br /><br />For a full list of what information is stored consult the plugins readme</p>
+        <p><b>Page Name: index.html</b></p>
+        <p>When you leave this page the details (your ip, duration spent on page etc.) will be recorded<br />
+            to session state.<br />
+            <br />
+            If you then choose to subscribe to the newsletter all of this data will be pulled from the session state<br />
+            and stored in the SQL Database (along with your name/email you provide when you subscribe).</p>       
+        <p>For a full list of what information is stored and how the plugin operates consult the plugins readme.<br />
+        </p>
 	</div>
 </body>
 </html>

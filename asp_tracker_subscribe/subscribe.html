@@ -1,0 +1,72 @@
+﻿<script "text/javascript" src="asp_tracker/asp_tracker_onLoad.aspx"></script>
+<script "text/javascript">
+    window.onbeforeunload = function () {
+        document.write('<script type="text/javascript" src="asp_tracker/asp_tracker_onUnload.aspx"><\/script>');
+}
+    function subscribe()  {        
+        var script = document.createElement('script');
+        script.src = 'asp_tracker/asp_tracker_onUnload.aspx';
+        document.body.appendChild(script);
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var link = "asp_tracker/asp_tracker_onSubscribe.aspx?name=" + name + "&email=" + email + "";
+        window.open(link, '_blank', 'width=250, height=150');
+    }
+</script>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>     
+    <title>ASP Tracker Demo - Home</title>
+<link rel="stylesheet" type="text/css" href="css/menucss.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylecss.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 47%;
+        }
+        .auto-style3 {
+            width: 185px;
+            color: #FFFFFF;
+        }
+    </style>
+</head>   
+<body>
+ <div id= "header">
+	<div id= "style">
+		ASP Tracker Demo
+	</div>	    
+	<div id="menu">
+	<ul>
+        <li><a href= "index.html">Home</a></li>
+        <li><a href= "contact_us.html">Contact Us</a></li>
+        <li><a href= "news.html">News</a></li></li>
+        <li><a href= "products.html">Products</a></li>
+	    <li class="current"><a href= "subscribe.html"><u><i>Subscribe</i></u></a></li>
+        <li><a href= "view_SQL.html"><u><i>View Data in SQL DB</i></u></a></li>
+	</ul>		
+	</div> 
+	<div id="content">
+        <p><strong>Subscribe</strong></p>
+        <p>To subscribe to the newsletter enter your details below.</p>
+        <p>You will recieve a message window informing you whether you have signed up successfully<br />
+            or whether your email address is already subscribed.<br />
+            <br />
+            Once you have done this you can view the SQL database and see the newly entered information.</p>
+		<p><br />
+            <table align="center" class="auto-style1">
+                <tr>
+                    <td class="auto-style3">Name:</td>
+                    <td>
+            <input id="name" type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">eMail Address:</td>
+                    <td>
+            <input id="email" type="text"/></td>
+                </tr>
+            </table>
+            <br />
+            <input id="session_store" type="submit" onclick="subscribe()" value="Subscribe" /></p>
+	</div>
+</body>
+</html>
