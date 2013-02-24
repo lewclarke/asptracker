@@ -1,4 +1,8 @@
-﻿<script language="javascript" src="asp_tracker/asp_tracker.aspx"></script>
+﻿<script type="text/javascript" src="asp_tracker/asp_tracker_onLoad.aspx"></script>
+<script type="text/javascript">window.onbeforeunload = function () {
+    document.write('<script type="text/javascript" src="asp_tracker/asp_tracker_onUnload.aspx"><\/script>');
+}
+</script>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +29,7 @@
         <p><b>View Data in SQL Database</b></p>
 		<p>Click the button below to run a query which will pull all entrys in the SQL database.</p>
         <p>This will open in a new window and output the results. </p>
-        <p>If an error occurs then the SQL database is incorrecently configured.<br /></p>
+        <p>If an error occurs then the SQL database is incorrectly configured.<br /></p>
         <p><input id="output_sql" type="submit" onclick="window.open('asp_tracker/sql_db_view.aspx')" value="Output Data in SQL DB" /></p>
 	</div>
 </body>
