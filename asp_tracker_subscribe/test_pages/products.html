@@ -1,0 +1,40 @@
+﻿<script type="text/javascript" src="asp_tracker/asp_tracker_onLoad.aspx"></script>
+<script type="text/javascript">window.onbeforeunload = function () {
+    document.write('<script type="text/javascript" src="asp_tracker/asp_tracker_onUnload.aspx"><\/script>');
+}
+</script>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>     
+    <title>ASP Tracker Demo - Products</title>
+<link rel="stylesheet" type="text/css" href="css/menucss.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylecss.css" />
+</head>   
+<body>
+ <div id= "header">
+	<div id= "style">
+		ASP Tracker Demo
+	</div>	    
+	<div id= "menu">
+    <ul>
+		<li><a href= "index.html">Home</a></li>
+		<li ><a href= "contact_us.html">Contact Us</a></li>
+		<li ><a href= "news.html">News</a></li></li>
+		<li  class="current" ><a href= "products.html">Products</a></li>
+	    <li><a href= "subscribe.html"><u><i>Subscribe</i></u></a></li>
+        <li><a href= "view_SQL.html"><u><i>View Data in SQL DB</i></u></a></li>
+    </ul>
+	</div>
+	<div id="content">
+        <p><b>Page Name: index.html</b></p>
+        <p>When you leave this page the details (your ip, duration spent on page etc.) will be recorded<br />
+            to session state.<br />
+            <br />
+            If you then choose to subscribe to the newsletter all of this data will be pulled from the session state<br />
+            and stored in the SQL Database (along with your name/email you provide when you subscribe).</p>       
+        <p>For a full list of what information is stored and how the plugin operates consult the plugins readme.<br />
+        </p>
+	</div>
+</body>
+</html>

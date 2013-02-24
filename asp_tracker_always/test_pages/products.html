@@ -1,6 +1,8 @@
-﻿<script language="javascript" src="asp_tracker/asp_tracker.aspx"></script>
-
-<!DOCTYPE html>
+﻿<script type="text/javascript" src="asp_tracker/asp_tracker_onLoad.aspx"></script>
+<script type="text/javascript">window.onbeforeunload = function () {
+    document.write('<script type="text/javascript" src="asp_tracker/asp_tracker_onUnload.aspx"><\/script>');
+}
+</script><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>     
     <title>ASP Tracker Demo - Products</title>

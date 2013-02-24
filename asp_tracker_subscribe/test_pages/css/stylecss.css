@@ -1,0 +1,58 @@
+<style type="text/css"> 
+
+body {background-color:#9999FF}
+
+
+#header{
+	background: #ff6f00;
+	margin:auto;
+	width:840px;
+	height:auto;
+	border:0px;
+}
+body {background-color:#9999FF}
+
+
+#style{
+font-size:4.00em;
+background: #CCCCCC;
+color: #CCCCCC;
+text-shadow: 1px 1px 3px #666666,
+                       -1px -1px 3px #FFFFFF;
+} 
+
+
+#content{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#content p{
+	color: #FFFFFF;
+	font-size:1.09em;
+	text-align:center;
+	text-margin: 5px;
+}
+
+
+
+#conetnt h1{
+
+	color: #FFFFFF;
+	font-size:1.00em;
+	text-align:center;
+
+}
+
+#header p1{
+	color: #FFFFFF;
+	font-size:1.09em;
+	text-align:left;
+
+
+}
+
+
+
+
+</style> 
