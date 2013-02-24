@@ -3,6 +3,7 @@ ASP Tracker Subscribe
 This version of the tracker records all user movement on your website to session state. Only when a user subscribes to the website (newsletter etc.) will the data
 be stored from session state into the SQL database.
 
+For a full list of features and implementation instructions view the included 'ASP Web Tracker' PDF File.
 
 Version History:
 

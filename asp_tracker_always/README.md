@@ -3,6 +3,7 @@ ASP Tracker Always
 
 This version of the tracker records every user movement on your website. Whenever a user visits a page it will be recorded to the SQL database. 
 
+For a full list of features and implementation instructions view the included 'ASP Web Tracker' PDF File.
 
 Version History:
 
